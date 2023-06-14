@@ -5,14 +5,14 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 
-export default function Portfolio() {
+export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <Navbar />
       <About />
       <Projects />
       <Contact />
-    </>
+    </main>
   );
 }

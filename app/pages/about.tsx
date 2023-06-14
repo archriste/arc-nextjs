@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col justify-between bg-gray-800 bg-gradient-to-r from-emerald-500 to-emerald-600 px-16 md:px-20">
+    <section className="relative flex min-h-screen w-full flex-col bg-gray-800 bg-gradient-to-r from-emerald-500 to-emerald-600 px-16 md:px-20">
       <a id="about" className="absolute -top-20"></a>
       <div>
         <h1 className="font-inter font-bold py-8 text-6xl text-white drop-shadow-xl">
@@ -19,17 +19,6 @@ export default function About() {
           is the key to building great products and delivering value. If you&apos;d
           like to work together, head down to the contact page!
         </p>
-      </div>
-      <div className="my-10">
-        <h2 className="font-inter py-8 text-5xl text-white drop-shadow-xl">
-          I&apos;ve got a blog, too.
-        </h2>
-        <Link
-          href="../blog"
-          className="font-inter inline-block animate-pop pt-4 text-2xl text-white drop-shadow-xl"
-        >
-          Click here to have a look.
-        </Link>
       </div>
     </section>
   );

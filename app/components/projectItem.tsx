@@ -21,14 +21,14 @@ export default function ProjectItem({
   github: string;
 }) {
   return (
-    <div className="m-2 h-40 border-2 border-black xl:mx-20">
+    <div className="relative m-2 h-40 overflow-hidden border-2 border-black xl:mx-20">
       <div
         className={
           id % 2 === 0 ? "flex h-full flex-row" : "flex h-full flex-row-reverse"
         }
       >
         <Image
-          className="inline-block"
+          className="absolute z-0 min-w-full sm:relative sm:z-10 sm:min-w-max"
           src={`/${img}`}
           alt={imgAlt}
           height={156}
@@ -36,7 +36,7 @@ export default function ProjectItem({
         />
         <div
           id="project-links"
-          className="box-border flex h-full flex-col bg-gray-800"
+          className="z-20 box-border flex h-full flex-col bg-gray-800"
         >
           <Link
             href={codepen}
@@ -57,12 +57,12 @@ export default function ProjectItem({
         </div>
         <div
           id="project-text"
-          className="relative flex w-full flex-col justify-center bg-gray-800 bg-opacity-50 sm:p-4 overflow-hidden"
+          className="relative z-20 flex w-full flex-col justify-center overflow-hidden bg-gray-800 bg-opacity-80 sm:bg-opacity-50 p-2"
         >
-          <h2 className="font-inter pb-4 block md:text-2xl sm:text-xl text-lg text-center sm:text-start font-bold text-white drop-shadow-xl">
+          <h2 className="font-inter block text-center text-md font-bold text-white drop-shadow-xl md:text-start md:px-4 sm:text-lg md:text-2xl">
             {name}
           </h2>
-          <h3 className="font-inter md:text-md hidden text-sm text-white drop-shadow-xl sm:block lg:text-lg">
+          <h3 className="font-inter md:text-md text-xs text-white drop-shadow-xl p-4 lg:text-lg">
             {description}
           </h3>
         </div>

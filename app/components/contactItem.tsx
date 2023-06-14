@@ -16,12 +16,15 @@ export default function ContactItem({
     <a
       href={link}
       target="_blank"
-      className="relative my-2 box-border flex h-20 w-full items-center justify-between overflow-hidden rounded-xl border text-white animate-diagonal"
-      style={{ backgroundImage: `url(${bg.src})`, backgroundAttachment: "fixed" }}
+      className="relative my-2 box-border flex h-20 w-full animate-diagonal items-center sm:justify-between justify-center overflow-hidden rounded-xl border text-white"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundAttachment: "fixed",
+      }}
     >
-        <div className="absolute h-full w-full bg-opacity-0 hover:backdrop-invert transition duration-100"></div>
-      <span className="px-8 text-xl font-bold lg:text-2xl">{name}</span>
-      <FontAwesomeIcon icon={icon} className="h-16 px-8" />
+      <div className="absolute h-full w-full bg-opacity-0 transition duration-100 hover:backdrop-invert"></div>
+      <span className="px-8 hidden sm:inline sm:text-lg md:text-xl font-bold lg:text-2xl xl:text-3xl xl:px-16">{name}</span>
+      <FontAwesomeIcon icon={icon} className="h-16 px-8 xl:px-16" />
     </a>
   );
 }

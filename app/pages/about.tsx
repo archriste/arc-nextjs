@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col bg-gray-800 bg-gradient-to-r from-emerald-500 to-emerald-600 px-16 md:px-20">
+    <section className="relative flex min-h-screen w-full flex-col bg-gray-800 bg-gradient-to-r from-emerald-500 to-emerald-600 px-10 sm:px-16 md:px-20">
       <a id="about" className="absolute -top-20"></a>
       <div>
         <h1 className="font-inter font-bold py-8 text-6xl text-white drop-shadow-xl">

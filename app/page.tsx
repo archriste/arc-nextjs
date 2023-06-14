@@ -1,28 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export function generateStaticParams() {
+  return [{ name: "portfolio" }, { name: "blog" }];
+}
+
+export default function Home({ params }: { params: { name: string } }) {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white p-24">
       <h1 className="m-8 p-8 text-center text-6xl text-black">
         Alain Christe - Software Developer
       </h1>
-      <h2 className="text-center text-4xl">
-        Follow one of the links below:
-      </h2>
-      <div className="flex m-16 flex-row justify-center bg-gray-200 rounded-xl border border-black overflow-hidden">
-        <a
-          className="flex h-24 w-96 items-center border-r border-black justify-center text-2xl hover:bg-gray-300"
-          href={`./portfolio.html`}
+      <h2 className="text-center text-4xl">Follow one of the links below:</h2>
+      <div className="m-16 flex flex-row justify-center overflow-hidden rounded-xl border border-black bg-gray-200">
+        <Link
+          className="flex h-24 w-96 items-center justify-center border-r border-black text-2xl hover:bg-gray-300"
+          href={`portfolio/`}
         >
           Portfolio
-        </a>
-        <a
+        </Link>
+        <Link
           className="flex h-24 w-96 items-center justify-center text-2xl hover:bg-gray-300"
-          href={`./blog.html`}
+          href={`blog/`}
         >
           Blog
-        </a>
+        </Link>
       </div>
     </main>
   );

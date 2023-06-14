@@ -6,6 +6,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
 
@@ -36,3 +39,4 @@ jobs:
         with:
           branch: gh-pages
           folder: out
+          clean: true

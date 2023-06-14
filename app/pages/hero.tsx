@@ -3,7 +3,7 @@ import Button from "../components/navbutton";
 
 export default function Hero() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24">
+    <div className="flex min-h-full flex-col items-center justify-center">
       <span
         id="hero-title"
         className="font-inter fixed left-2/4 top-2/4 w-full -translate-x-2/4 -translate-y-2/4 animate-fade text-white text-center text-8xl mix-blend-difference"

@@ -7,7 +7,7 @@ import Contact from "./pages/contact";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overscroll-none">
       <Hero />
       <Navbar />
       <About />

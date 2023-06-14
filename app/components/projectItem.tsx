@@ -29,7 +29,7 @@ export default function ProjectItem({
       >
         <Image
           className="inline-block"
-          src={`/img/${img}`}
+          src={`https://archriste.imgix.net/public/img/${img}`}
           alt={imgAlt}
           height={156}
           width={234}

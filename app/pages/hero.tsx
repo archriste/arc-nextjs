@@ -8,13 +8,13 @@ export default function Hero() {
         id="hero-title"
         className="font-inter fixed left-2/4 top-2/4 w-full -translate-x-2/4 -translate-y-2/4 animate-fade text-white text-center text-8xl mix-blend-difference"
       >
-        Hi, I'm Alain!
+        Hi, I&apos;m Alain!
       </span>
       <a
           href="https://github.com/archriste/archriste.github.io/blob/main/README.md"
           target="_blank"
           className="fixed top-3/4 animate-slowfade text-center font-inter"
-          >...and I'd love for you to view the readme!</a>
+          >...and I&apos;d love for you to view the readme!</a>
     </div>
   );
 }

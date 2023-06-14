@@ -9,20 +9,20 @@ export default function About() {
           About me
         </h1>
         <p className="font-inter w-full py-4 text-2xl text-white drop-shadow-xl">
-          My name is Alain. I'm a coder who is passionate about learning new
+          My name is Alain. I&apos;m a coder who is passionate about learning new
           ways to create meaningful tools and applications. My main focus at the
           moment is on transitioning from my IT background to a full-time career
           in software development.
         </p>
         <p className="font-inter w-full py-4 text-2xl text-white drop-shadow-xl">
           I believe that being obsessed about customers and the user experience
-          is the key to building great products and delivering value. If you'd
+          is the key to building great products and delivering value. If you&apos;d
           like to work together, head down to the contact page!
         </p>
       </div>
       <div className="my-10">
         <h2 className="font-inter py-8 text-5xl text-white drop-shadow-xl">
-          I've got a blog, too.
+          I&apos;ve got a blog, too.
         </h2>
         <Link
           href="../blog"

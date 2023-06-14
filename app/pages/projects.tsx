@@ -10,10 +10,10 @@ export default function Projects() {
         Projects
       </h1>
       <h2 className="font-inter py-4 text-2xl text-white drop-shadow-xl">
-        Here's a selection of projects I've completed.
+        Here&apos;s a selection of projects I&apos;ve completed.
         </h2>
         <h2 className="font-inter py-4 text-2xl text-white drop-shadow-xl">
-        I'm working on new ones all the time.
+        I&apos;m working on new ones all the time.
       </h2>
       <h1 className="font-inter font-bold py-8 text-5xl text-white drop-shadow-xl">
         Front End

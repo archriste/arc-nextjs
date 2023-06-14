@@ -4,7 +4,7 @@ import { faCodepen, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ProjectItem({
-  key,
+  id,
   img,
   name,
   description,
@@ -12,7 +12,7 @@ export default function ProjectItem({
   codepen,
   github,
 }: {
-  key: number;
+  id: number;
   name: string;
   description: string;
   img: string;
@@ -24,12 +24,12 @@ export default function ProjectItem({
     <div className="m-2 h-40 border-2 border-black xl:mx-20">
       <div
         className={
-          key % 2 === 0 ? "flex h-full flex-row" : "flex h-full flex-row-reverse"
+          id % 2 === 0 ? "flex h-full flex-row" : "flex h-full flex-row-reverse"
         }
       >
         <Image
           className="inline-block"
-          src={`https://archriste.imgix.net/public/img/${img}`}
+          src={`/${img}`}
           alt={imgAlt}
           height={156}
           width={234}

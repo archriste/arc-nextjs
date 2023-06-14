@@ -13,13 +13,13 @@ export default function Home() {
       <div className="flex m-16 flex-row justify-center bg-gray-200 rounded-xl border border-black overflow-hidden">
         <Link
           className="flex h-24 w-96 items-center border-r border-black justify-center text-2xl hover:bg-gray-300"
-          href={`portfolio/`}
+          href={`portfolio/page.tsx`}
         >
           Portfolio
         </Link>
         <Link
           className="flex h-24 w-96 items-center justify-center text-2xl hover:bg-gray-300"
-          href={`blog/`}
+          href={`blog/page.tsx`}
         >
           Blog
         </Link>

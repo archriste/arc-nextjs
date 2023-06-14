@@ -19,4 +19,5 @@ module.exports = {
     loader: 'imgix',
     path: 'archriste.imgix.net',
   },
+  output: 'export'
 }

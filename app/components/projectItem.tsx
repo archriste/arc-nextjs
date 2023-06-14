@@ -20,15 +20,18 @@ export default function ProjectItem({
   codepen: string;
   github: string;
 }) {
+
+  var reverse = id % 2 === 0 ? false : true;
+
   return (
-    <div className="relative m-2 h-40 overflow-hidden border-2 border-black xl:mx-20">
+    <div className="relative m-2 h-40 overflow-hidden  border-black xl:mx-20">
       <div
         className={
-          id % 2 === 0 ? "flex h-full flex-row" : "flex h-full flex-row-reverse"
+          reverse ? "flex h-full flex-row-reverse" : "flex h-full flex-row"
         }
       >
         <Image
-          className="absolute z-0 min-w-full sm:relative sm:z-10 sm:min-w-max h-auto"
+          className={`absolute z-0 min-w-full sm:relative sm:z-10 sm:min-w-max border-gray-900 h-auto`}
           src={`/${img}`}
           alt={imgAlt}
           height={156}
@@ -36,12 +39,12 @@ export default function ProjectItem({
         />
         <div
           id="project-links"
-          className="z-20 box-border flex h-full flex-col bg-gray-800"
+          className={`${reverse ? "border-r" : "border-l"} z-20 box-border flex h-full flex-col border border-gray-900 bg-gray-800`}
         >
           <Link
             href={codepen}
             target="_blank"
-            className="flex h-1/2 flex-col items-center border-x border-b border-gray-900 p-2 text-white transition duration-75 ease-in-out hover:bg-gray-200 hover:text-gray-800"
+            className="flex h-1/2 flex-col items-center border-gray-900 p-2 text-white transition duration-75 ease-in-out hover:bg-gray-200 hover:text-gray-800"
           >
             <FontAwesomeIcon icon={faCodepen} className="" />
             <span className="text-sm font-bold">CODEPEN</span>
@@ -49,7 +52,7 @@ export default function ProjectItem({
           <Link
             href={github}
             target="_blank"
-            className="flex h-1/2 flex-col items-center border-x border-gray-900 p-2 text-white transition duration-75 ease-in-out hover:bg-gray-200 hover:text-gray-800"
+            className="flex h-1/2 flex-col items-center border-gray-900 p-2 text-white transition duration-75 ease-in-out hover:bg-gray-200 hover:text-gray-800"
           >
             <FontAwesomeIcon icon={faGithub} className="" />
             <span className="text-sm font-bold">GITHUB</span>
@@ -57,7 +60,7 @@ export default function ProjectItem({
         </div>
         <div
           id="project-text"
-          className="relative z-20 flex w-full flex-col justify-center overflow-hidden bg-gray-800 bg-opacity-80 sm:bg-opacity-50 p-2"
+          className={`${reverse ? "border-l" : "border-r"} relative z-20 flex w-full flex-col justify-center overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-80 sm:bg-opacity-50 p-2`}
         >
           <h2 className="font-inter block text-center text-md font-bold text-white drop-shadow-xl md:text-start xl:px-8 md:px-4 sm:text-lg md:text-2xl">
             {name}

@@ -13,7 +13,7 @@ export default function Projects() {
         Here&apos;s a selection of projects I&apos;ve completed.
         </h2>
         <h2 className="font-inter py-4 text-2xl text-white drop-shadow-xl">
-        I&apos;m working on new ones all the time.
+        Shoot me a message if you&apos;ve got one for me!
       </h2>
       <h1 className="font-inter font-bold py-8 text-5xl text-white drop-shadow-xl">
         Front End

@@ -3,7 +3,7 @@ import NavButton from "./navbutton";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 z-50 flex h-20 min-w-full items-stretch justify-center border-b border-t shadow shadow-transparent backdrop-blur backdrop-brightness-50 backdrop-grayscale bg-black bg-opacity-20">
+    <div className="sticky top-0 z-50 flex h-20 min-w-full items-stretch justify-center border-black border-b shadow shadow-transparent backdrop-blur backdrop-brightness-50 backdrop-grayscale bg-black bg-opacity-20">
       <NavButton
         to="about"
         text="About"

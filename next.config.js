@@ -28,7 +28,7 @@ module.exports = {
     loaderFile: '/utils/loader.js',
     path: 'archriste.imgix.net',
   },
-  output: 'standalone',
+  output: 'export',
   experimental: {
     appDir: true,
   },

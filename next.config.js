@@ -3,6 +3,7 @@ const nextConfig = {
     experimental: {
         images: true,
     },
+    output: 'export',
 }
 
 module.exports = nextConfig

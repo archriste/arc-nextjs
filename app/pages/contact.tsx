@@ -9,6 +9,7 @@ export default function Contact() {
         Contact
       </h1>
       <ContactGrid />
+      <h3 className="font-inter py-8 text-2xl translate-y-96 text-white drop-shadow-xl">Nothing to see down here!</h3>
     </section>
   );
 }

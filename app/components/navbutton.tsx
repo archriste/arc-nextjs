@@ -6,7 +6,7 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 export default function NavButton({ to, text, classes }: { to: string, text: string, classes: string }) {
   return (
       <Link to={to} spy={true} smooth={"easeInOutCubic"} duration={1000}>
-        <button className={classes}>{text}</button>
+        <button className={`flex h-full items-center justify-center px-4 sm:px-8 text-white transition duration-200 ${classes}`}>{text}</button>
       </Link>
   );
 }

@@ -20,18 +20,17 @@ export default function ProjectItem({
   codepen: string;
   github: string;
 }) {
-
   var reverse = id % 2 === 0 ? false : true;
 
   return (
-    <div className="relative m-2 h-40 xl:h-32 overflow-hidden  border-black">
+    <div className="relative m-2 h-40 overflow-hidden border-black  xl:h-32">
       <div
         className={
           reverse ? "flex h-full flex-row-reverse" : "flex h-full flex-row"
         }
       >
         <Image
-          className={`absolute z-0 min-w-full sm:relative sm:z-10 sm:min-w-max border-gray-900 h-auto`}
+          className={`absolute z-0 h-auto min-w-full border-gray-900 sm:relative sm:z-10 sm:min-w-max`}
           src={`/${img}`}
           alt={imgAlt}
           height={156}
@@ -39,7 +38,9 @@ export default function ProjectItem({
         />
         <div
           id="project-links"
-          className={`${reverse ? "border-r" : "border-l"} z-20 box-border flex h-full flex-col border border-gray-900 bg-gray-800`}
+          className={`${
+            reverse ? "border-r" : "border-l"
+          } z-20 box-border flex h-full flex-col border border-gray-900 bg-gray-800`}
         >
           <Link
             href={codepen}
@@ -60,12 +61,14 @@ export default function ProjectItem({
         </div>
         <div
           id="project-text"
-          className={`${reverse ? "border-l" : "border-r"} relative z-20 flex w-full flex-col justify-center overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 sm:bg-opacity-50 p-2`}
+          className={`${
+            reverse ? "border-l" : "border-r"
+          } relative z-20 flex w-full flex-col sm:justify-center justify-evenly overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 p-2 sm:bg-opacity-50`}
         >
-          <h2 className="font-inter block text-center text-base font-bold text-white drop-shadow-xl md:text-start xl:px-8 md:px-4 sm:text-lg md:text-xl">
+          <h2 className="font-inter block text-center text-base font-bold text-white drop-shadow-xl sm:text-lg md:px-4 md:text-start md:text-xl xl:px-8">
             {name}
           </h2>
-          <h3 className="font-inter text-sm text-white drop-shadow-xl md:px-4 xl:px-8 lg:text-lg xl:text-xl">
+          <h3 className="font-inter text-sm text-white drop-shadow-xl md:px-4 text-justify lg:text-lg xl:px-8 xl:text-xl">
             {description}
           </h3>
         </div>

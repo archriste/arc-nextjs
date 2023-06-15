@@ -24,7 +24,7 @@ export default function ProjectItem({
   var reverse = id % 2 === 0 ? false : true;
 
   return (
-    <div className="relative m-2 h-40 overflow-hidden  border-black xl:mx-20">
+    <div className="relative m-2 h-40 overflow-hidden  border-black">
       <div
         className={
           reverse ? "flex h-full flex-row-reverse" : "flex h-full flex-row"
@@ -62,10 +62,10 @@ export default function ProjectItem({
           id="project-text"
           className={`${reverse ? "border-l" : "border-r"} relative z-20 flex w-full flex-col justify-center overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-80 sm:bg-opacity-50 p-2`}
         >
-          <h2 className="font-inter block text-center text-md font-bold text-white drop-shadow-xl md:text-start xl:px-8 md:px-4 sm:text-lg md:text-2xl">
+          <h2 className="font-inter block text-center text-base font-bold text-white drop-shadow-xl md:text-start xl:px-8 md:px-4 sm:text-lg md:text-2xl">
             {name}
           </h2>
-          <h3 className="font-inter md:text-md text-xs text-white drop-shadow-xl p-4 xl:px-8 lg:text-lg">
+          <h3 className="font-inter md:text-base text-sm text-white drop-shadow-xl p-4 xl:px-8 lg:text-lg xl:text-xl">
             {description}
           </h3>
         </div>

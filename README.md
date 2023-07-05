@@ -44,9 +44,10 @@ An honorable mention - the usefulness of Prettier isn't obvious in production bu
 - Rework project components to allow a maximize toggle on click that shows description and links, rework styling
 
 ## Known issues 🛠️
-- **(Mobile)** Overscroll appears to vary across browsers
-  - *Potential fix:* Re-evaluate overscroll styles and gain a better understanding of the DOM
-- **(Mobile)** Contact item background doesn't appear fixed or animated
+Future issues will be listed under the issues tab.
+- [x] ~~**(Mobile)** Overscroll appears to vary across browsers~~
+  - ~~*Potential fix:* Re-evaluate overscroll styles and gain a better understanding of the DOM~~
+- [ ] **(Mobile)** Contact item background doesn't appear fixed or animated
   - *Potential fix:* Change the background from styled with CSS to an element-based approach in contact item component
 
 Future problems will be accounted for in GitHub Issues.

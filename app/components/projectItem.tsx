@@ -20,57 +20,52 @@ export default function ProjectItem({
   codepen: string;
   github: string;
 }) {
-  var reverse = id % 2 === 0 ? false : true;
 
   return (
-    <div className="relative m-2 h-40 overflow-hidden rounded-xl border-black xl:h-32">
-      <div
-        className={
-          reverse ? "flex h-full flex-row-reverse" : "flex h-full flex-row"
-        }
-      >
-        <Image
-          className={`absolute bottom-0 z-0 h-auto min-w-full border-gray-900 sm:relative sm:z-10 sm:min-w-max`}
-          src={`/${img}`}
-          alt={imgAlt}
-          height={156}
-          width={234}
-        />
+    <div className="snap-start mr-4 h-96 translate-x-9 md:translate-x-20 lg:translate-x-32 xl:translate-x-40 w-full max-w-xs flex-none overflow-hidden rounded-xl border border-gray-900 sm:h-[500px] sm:max-w-lg">
+      <div className="flex h-full flex-col">
+        <div className={`relative h-full`}>
+          <Image
+            className="z-0 border-gray-900"
+            src={`/${img}`}
+            alt={imgAlt}
+            fill
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        <div
+          id="project-text"
+          className="z-20 flex h-full flex-col justify-start bg-gray-800 bg-opacity-90 p-2"
+        >
+          <h2 className="text-2xl pb-2 px-2 font-bold text-white drop-shadow-xl">
+            {name}
+          </h2>
+          <h3 className="text-justify px-2 text-lg leading-5 text-white drop-shadow-xl">
+            {description}
+          </h3>
+        </div>
         <div
           id="project-links"
-          className={`${
-            reverse ? "border-r" : "border-l"
-          } z-20 box-border flex h-full flex-col border border-gray-900 bg-gray-800`}
+          className="flex h-48 sm:h-36 w-full flex-row justify-center gap-px overflow-hidden border-t border-gray-900 bg-gray-900 text-white"
         >
           <Link
             href={codepen}
             target="_blank"
-            className="flex h-1/2 flex-col items-center border-gray-900 p-2 text-white transition duration-75 ease-in-out hover:bg-gray-200 hover:text-gray-800"
+            className="flex h-full w-full flex-row-reverse items-center justify-center bg-gray-800 transition hover:bg-gray-200 hover:text-gray-800"
           >
-            <FontAwesomeIcon icon={faCodepen} className="" />
-            <span className="text-sm font-bold">CODEPEN</span>
+            <FontAwesomeIcon icon={faCodepen} className="w-11" />
+            <span className="hidden px-6 text-2xl font-bold sm:inline-block">CodePen</span>
           </Link>
           <Link
             href={github}
             target="_blank"
-            className="flex h-1/2 flex-col items-center border-gray-900 p-2 text-white transition duration-75 ease-in-out hover:bg-gray-200 hover:text-gray-800"
+            className="flex h-full w-full flex-row-reverse items-center justify-center bg-gray-800 transition hover:bg-gray-200 hover:text-gray-800"
           >
-            <FontAwesomeIcon icon={faGithub} className="" />
-            <span className="text-sm font-bold">GITHUB</span>
+            <FontAwesomeIcon icon={faGithub} className="w-11" />
+            <span className="hidden px-12 text-2xl font-bold sm:inline-block">GitHub</span>
           </Link>
-        </div>
-        <div
-          id="project-text"
-          className={`${
-            reverse ? "border-l" : "border-r"
-          } relative top-1/2 z-20 flex h-1/2 w-full flex-col justify-evenly overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 p-2 sm:top-0 sm:h-full sm:justify-center sm:bg-opacity-50`}
-        >
-          <h2 className="font-inter block text-left text-base font-bold text-white drop-shadow-xl sm:text-lg md:px-4 md:text-start md:text-xl xl:px-8">
-            {name}
-          </h2>
-          <h3 className="font-inter text-justify text-sm leading-4 text-white drop-shadow-xl md:px-4 lg:text-lg xl:px-8 xl:text-xl">
-            {description}
-          </h3>
         </div>
       </div>
     </div>

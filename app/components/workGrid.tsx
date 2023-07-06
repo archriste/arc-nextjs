@@ -2,7 +2,7 @@ import WorkItem from "./workItem";
 
 export default function WorkGrid({ workData }: { workData: any }) {
   return (
-    <div id="project-grid" className="flex flex-col">
+    <div id="project-grid" className="flex flex-col px-8 sm:px-0">
       {workData.map(
         ({
           id,

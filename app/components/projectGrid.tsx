@@ -2,7 +2,7 @@ import ProjectItem from "./projectItem";
 
 export default function ProjectGrid({ projectData }: { projectData: any }) {
   return (
-    <div id="project-grid" className="flex flex-col">
+    <div id="project-grid" className="snap-x flex flex-nowrap overflow-x-auto scrollbar-hide scroll-px-9 md:scroll-px-20 lg:scroll-px-32 xl:scroll-px-40 h-[400px] sm:h-[540px]">
       {projectData.map(
         ({
           id,
@@ -21,17 +21,16 @@ export default function ProjectGrid({ projectData }: { projectData: any }) {
           codepen: string;
           github: string;
         }) => (
-          <div key={id}>
-            <ProjectItem
-              id={id}
-              name={name}
-              description={description}
-              img={img}
-              imgAlt={imgAlt}
-              codepen={codepen}
-              github={github}
-            />
-          </div>
+          <ProjectItem
+            key={id}
+            id={id}
+            name={name}
+            description={description}
+            img={img}
+            imgAlt={imgAlt}
+            codepen={codepen}
+            github={github}
+          />
         )
       )}
     </div>

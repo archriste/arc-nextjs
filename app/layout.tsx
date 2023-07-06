@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`overscroll-none ${inter.variable}`}>
-      <body>{children}</body>
+      <body className="overscroll-y-none">{children}</body>
     </html>
   );
 }

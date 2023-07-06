@@ -30,7 +30,6 @@ export default function ProjectItem({
             src={`/${img}`}
             alt={imgAlt}
             fill
-            placeholder="blur"
             style={{
               objectFit: "cover",
             }}

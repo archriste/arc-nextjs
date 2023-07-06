@@ -23,14 +23,14 @@ export default function ProjectItem({
   var reverse = id % 2 === 0 ? false : true;
 
   return (
-    <div className="relative m-2 h-40 overflow-hidden border-black  xl:h-32">
+    <div className="relative m-2 h-40 overflow-hidden rounded-xl border-black xl:h-32">
       <div
         className={
           reverse ? "flex h-full flex-row-reverse" : "flex h-full flex-row"
         }
       >
         <Image
-          className={`absolute z-0 h-auto min-w-full border-gray-900 sm:relative sm:z-10 sm:min-w-max`}
+          className={`absolute bottom-0 z-0 h-auto min-w-full border-gray-900 sm:relative sm:z-10 sm:min-w-max`}
           src={`/${img}`}
           alt={imgAlt}
           height={156}
@@ -63,12 +63,12 @@ export default function ProjectItem({
           id="project-text"
           className={`${
             reverse ? "border-l" : "border-r"
-          } relative z-20 flex w-full flex-col sm:justify-center justify-evenly overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 p-2 sm:bg-opacity-50`}
+          } relative z-20 flex w-full flex-col sm:justify-center justify-evenly overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 p-2 sm:bg-opacity-50 top-1/2 h-1/2 sm:top-0 sm:h-full`}
         >
-          <h2 className="font-inter block text-center text-base font-bold text-white drop-shadow-xl sm:text-lg md:px-4 md:text-start md:text-xl xl:px-8">
+          <h2 className="font-inter block text-left text-base font-bold text-white drop-shadow-xl sm:text-lg md:px-4 md:text-start md:text-xl xl:px-8">
             {name}
           </h2>
-          <h3 className="font-inter text-sm text-white drop-shadow-xl md:px-4 text-justify lg:text-lg xl:px-8 xl:text-xl">
+          <h3 className="font-inter text-sm leading-4 text-white drop-shadow-xl md:px-4 text-justify lg:text-lg xl:px-8 xl:text-xl">
             {description}
           </h3>
         </div>

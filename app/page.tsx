@@ -5,6 +5,7 @@ import About from "./sections/about";
 import Projects from "./sections/projects";
 import Contact from "./sections/contact";
 import Work from "./sections/work";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (

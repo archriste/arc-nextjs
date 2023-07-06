@@ -22,7 +22,7 @@ export default function ProjectItem({
 }) {
 
   return (
-    <div className="snap-start mr-4 h-96 translate-x-9 md:translate-x-20 lg:translate-x-32 xl:translate-x-40 w-full max-w-xs flex-none overflow-hidden rounded-xl border border-gray-900 sm:h-[500px] sm:max-w-lg">
+    <div className="snap-start mr-4 h-96 translate-x-[calc((100vw-318px)/2)] md:translate-x-20 lg:translate-x-32 xl:translate-x-40 w-full max-w-xs flex-none overflow-hidden rounded-xl border border-gray-900 sm:h-[500px] sm:max-w-lg">
       <div className="flex h-full flex-col">
         <div className={`relative h-full`}>
           <Image

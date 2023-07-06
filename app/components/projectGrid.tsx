@@ -2,7 +2,7 @@ import ProjectItem from "./projectItem";
 
 export default function ProjectGrid({ projectData }: { projectData: any }) {
   return (
-    <div id="project-grid" className="snap-x snap-mandatory sm:snap-proximity flex flex-nowrap overflow-x-auto scroll-px-9 md:scroll-px-20 lg:scroll-px-32 xl:scroll-px-40 h-[400px] sm:h-[540px]">
+    <div id="project-grid" className="snap-x snap-mandatory sm:snap-proximity flex flex-nowrap overflow-x-auto scroll-px-[calc((100vw-318px)/2)] md:scroll-px-20 lg:scroll-px-32 xl:scroll-px-40 h-[400px] sm:h-[540px]">
       {projectData.map(
         ({
           id,

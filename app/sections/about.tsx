@@ -3,10 +3,10 @@ import Anchor from "../components/anchor";
 
 export default function About() {
   return (
-    <section className="relative flex w-screen flex-col bg-gray-800 bg-gradient-to-t from-green-500 to-emerald-500 py-24 px-10 md:px-20 lg:px-32 xl:px-40">
+    <section className="relative flex w-screen flex-col bg-gray-800 bg-gradient-to-t from-green-500 to-emerald-500 px-10 py-24 md:px-20 lg:px-32 xl:px-40">
       <Anchor id="about" />
       <div>
-        <h1 className="font-inter text-center pb-8 text-5xl font-bold text-white drop-shadow-xl sm:text-left">
+        <h1 className="font-inter pb-8 text-center text-5xl font-bold text-white drop-shadow-xl sm:text-left">
           About me
         </h1>
         <p className="font-inter w-full pb-4 text-2xl text-white drop-shadow-xl">

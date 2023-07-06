@@ -22,7 +22,7 @@ export default function WorkItem({
   github: string;
 }) {
   return (
-    <div className="flex w-full flex-col items-center justify-center rounded-2xl border-2 bg-black bg-opacity-50 p-4">
+    <div className="flex w-full flex-col items-center justify-center rounded-2xl border-2 border-black bg-black bg-opacity-50 p-4">
       <h2 className="font-inter text-center text-xl font-bold text-white md:pb-8 md:text-4xl">
         {name}
       </h2>
@@ -40,13 +40,15 @@ export default function WorkItem({
       <p className="font-inter px-2 py-4 text-justify text-base text-white sm:px-10 lg:text-center">
         {description}
       </p>
-      <div className="flex h-16 w-full flex-row overflow-hidden justify-center border border-gray-900 bg-gray-900 gap-px rounded-xl text-white sm:w-3/4">
+      <div className="flex h-16 w-full flex-row justify-center gap-px overflow-hidden rounded-xl border border-gray-900 bg-gray-900 text-white sm:w-3/4">
         <Link
           target="_blank"
           href={url}
-          className="flex justify-center items-center h-full w-full flex-row bg-gray-800 hover:bg-gray-200 hover:text-gray-800"
+          className="flex h-full w-full flex-row items-center justify-center bg-gray-800 transition hover:bg-gray-200 hover:text-gray-800"
         >
-          <span className="text-2xl px-12 font-bold hidden sm:inline-block">Link</span>
+          <span className="hidden px-12 text-2xl font-bold sm:inline-block">
+            Link
+          </span>
           <FontAwesomeIcon
             icon={faExternalLinkAlt}
             className="h-full w-10 text-2xl"
@@ -55,9 +57,11 @@ export default function WorkItem({
         <Link
           target="_blank"
           href={github}
-          className="flex justify-center items-center h-full w-full flex-row bg-gray-800 hover:bg-gray-200 hover:text-gray-800"
+          className="flex h-full w-full flex-row items-center justify-center bg-gray-800 transition hover:bg-gray-200 hover:text-gray-800"
         >
-          <span className="text-2xl px-12 font-bold hidden sm:inline-block">GitHub</span>
+          <span className="hidden px-12 text-2xl font-bold sm:inline-block">
+            GitHub
+          </span>
           <FontAwesomeIcon icon={faGithub} className="h-full w-11 text-2xl" />
         </Link>
       </div>

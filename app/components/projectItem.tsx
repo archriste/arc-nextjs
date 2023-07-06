@@ -63,12 +63,12 @@ export default function ProjectItem({
           id="project-text"
           className={`${
             reverse ? "border-l" : "border-r"
-          } relative z-20 flex w-full flex-col sm:justify-center justify-evenly overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 p-2 sm:bg-opacity-50 top-1/2 h-1/2 sm:top-0 sm:h-full`}
+          } relative top-1/2 z-20 flex h-1/2 w-full flex-col justify-evenly overflow-hidden border-y border-gray-900 bg-gray-800 bg-opacity-90 p-2 sm:top-0 sm:h-full sm:justify-center sm:bg-opacity-50`}
         >
           <h2 className="font-inter block text-left text-base font-bold text-white drop-shadow-xl sm:text-lg md:px-4 md:text-start md:text-xl xl:px-8">
             {name}
           </h2>
-          <h3 className="font-inter text-sm leading-4 text-white drop-shadow-xl md:px-4 text-justify lg:text-lg xl:px-8 xl:text-xl">
+          <h3 className="font-inter text-justify text-sm leading-4 text-white drop-shadow-xl md:px-4 lg:text-lg xl:px-8 xl:text-xl">
             {description}
           </h3>
         </div>

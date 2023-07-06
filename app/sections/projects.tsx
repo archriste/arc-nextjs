@@ -10,7 +10,7 @@ export default function Projects() {
       <h1 className="font-inter px-10 pb-8 text-center text-5xl font-bold text-white drop-shadow-xl sm:px-0 sm:text-left">
         Projects
       </h1>
-      <h2 className="font-inter px-8 text-2xl text-justify text-white drop-shadow-xl sm:px-0">
+      <h2 className="font-inter px-8 text-justify text-2xl text-white drop-shadow-xl sm:px-0">
         Here are some learning projects I&apos;ve put together as practice.
       </h2>
       <h1 className="font-inter px-10 py-8 text-center text-4xl font-bold text-white drop-shadow-xl sm:px-0 sm:text-left">

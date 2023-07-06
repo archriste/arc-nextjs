@@ -33,7 +33,7 @@ export default function ProjectGrid({ projectData }: { projectData: any }) {
           />
         )
       )}
-      <div id="project-grid-end" className="min-w-[16px] translate-x-9 md:translate-x-20 lg:translate-x-32 xl:translate-x-40"></div>
+      <div id="project-grid-end" className="min-w-[16px] translate-x-[calc((100vw-318px)/2)] md:translate-x-20 lg:translate-x-32 xl:translate-x-40"></div>
     </div>
   );
 }

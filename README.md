@@ -14,7 +14,7 @@ After hand-coding my [last portfolio website](https://github.com/archriste/old-p
 
 To remedy this, I decided that I would rewrite the site in a framework that would not only enable faster development and load times but also provide greater control over content served to the user. Wanting to try something new, I chose Next.js.
 
-At first, it seemed that there were a few practical drawbacks: I was porting a single page application that wouldn't initially be able to take advantage of page routing, I'd only received a cursory introduction to React, and I wanted to deploy to GitHub Pages instead of an easier choice like Vercel. Nevertheless, I appreciated the active community and the opportunity to expand my knowledge of modern frameworks. Simple as it may be at the moment, I've learned a lot so far from reworking my portfolio.
+At first, it seemed that there were a few practical drawbacks, such as porting a single page application that wouldn't initially be able to take advantage of page routing. Nevertheless, I appreciated the active community and the opportunity to expand my knowledge of modern frameworks. Simple as it may be at the moment, I've learned a lot so far from reworking my portfolio.
 
 I'm looking forward to updating the site regularly; stay tuned!
 

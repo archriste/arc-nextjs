@@ -1,5 +1,5 @@
 # christe.co
-<sup>Built on [Next.js](https://github.com/vercel/next.js) with [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss), hosted by GitHub Pages.</sup>
+<sup>Built on [Next.js](https://github.com/vercel/next.js) with [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss), hosted by Vercel.</sup>
 
 ## Welcome to the readme! 👋
 

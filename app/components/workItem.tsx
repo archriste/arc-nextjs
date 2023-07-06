@@ -22,7 +22,7 @@ export default function WorkItem({
   github: string;
 }) {
   return (
-    <div className="flex w-full flex-col items-center justify-center rounded-2xl border-2 border-black bg-black bg-opacity-50 p-4">
+    <div className="flex w-full flex-col items-center justify-center rounded-2xl border border-black bg-black bg-opacity-50 p-4">
       <h2 className="font-inter text-center text-xl font-bold text-white md:pb-8 md:text-4xl">
         {name}
       </h2>

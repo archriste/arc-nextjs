@@ -55,7 +55,7 @@ export default function ProjectItem({
             target="_blank"
             className="flex h-full w-full flex-row-reverse items-center justify-center bg-gray-800 transition hover:bg-gray-200 hover:text-gray-800"
           >
-            <FontAwesomeIcon icon={faCodepen} className="w-full h-1/2" />
+            <FontAwesomeIcon icon={faCodepen} className="h-1/2" />
             <span className="hidden px-6 text-2xl font-bold sm:inline-block">CodePen</span>
           </Link>
           <Link
@@ -63,8 +63,8 @@ export default function ProjectItem({
             target="_blank"
             className="flex h-full w-full flex-row-reverse items-center justify-center bg-gray-800 transition hover:bg-gray-200 hover:text-gray-800"
           >
-            <FontAwesomeIcon icon={faGithub} className="w-full h-1/2" />
-            <span className="hidden px-12 text-2xl font-bold sm:inline-block">GitHub</span>
+            <FontAwesomeIcon icon={faGithub} className="h-1/2" />
+            <span className="hidden px-6 text-2xl font-bold sm:inline-block">GitHub</span>
           </Link>
         </div>
       </div>

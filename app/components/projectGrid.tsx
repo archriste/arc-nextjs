@@ -63,15 +63,15 @@ export default function ProjectGrid({ projectData }: { projectData: any }) {
       <div className="self-center w-1/2 flex justify-center">
         <button
           onClick={() => handleScroll({ direction: "left" })}
-          className="z-10 hidden h-16 w-16 m-4 rounded-full bg-white shadow-md md:inline-block"
+          className="z-10 hidden h-16 w-16 m-4 rounded-full bg-white shadow-md md:inline-block border opacity-50 transition active:border-4 border-white hover:opacity-100"
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FontAwesomeIcon className="text-black h-1/2 pt-1" icon={faChevronLeft} />
         </button>
         <button
           onClick={() => handleScroll({ direction: "right" })}
-          className="z-10 hidden h-16 w-16 m-4 rounded-full bg-white shadow-md md:inline-block"
+          className="z-10 hidden h-16 w-16 m-4 rounded-full bg-white shadow-md md:inline-block border opacity-50 transition active:border-4 border-white hover:opacity-100"
         >
-          <FontAwesomeIcon icon={faChevronRight} />
+          <FontAwesomeIcon className="text-black h-1/2 pt-1" icon={faChevronRight} />
         </button>
       </div>
     </div>

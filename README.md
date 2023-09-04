@@ -1,10 +1,6 @@
 # christe.co
 <sup>Built on [Next.js](https://github.com/vercel/next.js) with [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss), hosted by Vercel.</sup>
 
-## Welcome to the readme! 👋
-
-I want to start by thanking all the developers that have spent their lives creating the tools we use every day. Twenty years ago, I logged on to the internet for the first time using MSN dialup and it's amazing to see how much has changed since then. You've made countless dreams come true.
-
 ## Contact 💌
 
 If you have any feedback or suggestions, feel free to email me at **alain@christe.co**. Or if you just want to chat, that's fine too!
